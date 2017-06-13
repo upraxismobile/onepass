@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<EditTextPreference 
+		android:title="@string/device_sn" 
+        android:key="device_sn" 
+		android:defaultValue="@string/default_device_sn"
+		android:inputType="number"
+		android:hint="@string/not_null"/>
+
+	<EditTextPreference 
+		android:title="@string/web_addr" 
+		android:key="web_addr" 
+		android:defaultValue="@string/default_web_addr"/>
+        
+	<EditTextPreference 
+		android:title="@string/web_update" 
+		android:key="web_update" 
+		android:defaultValue="@string/default_web_update" />
+	
+	<EditTextPreference 
+		android:title="@string/target_ip" 
+		android:key="target_ip" 
+		android:defaultValue="@string/default_target_ip"/>
+
+	<EditTextPreference 
+		android:title="@string/target_port" 
+		android:key="target_port" 
+		android:defaultValue="@string/default_target_port"
+		android:inputType="number"
+		android:hint="@string/not_null"/>
+	
+	<EditTextPreference 
+		android:title="@string/login_user" 
+		android:key="login_user" 
+		android:defaultValue="@string/default_login_user"/>
+        
+	<EditTextPreference 
+		android:title="@string/login_password" 
+		android:key="login_password" 
+		android:defaultValue="@string/default_login_password"/>
+	
+</PreferenceScreen>

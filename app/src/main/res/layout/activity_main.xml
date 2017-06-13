@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:id="@+id/mapLayout"
+        android:orientation="vertical" >
+
+        <com.baidu.mapapi.map.MapView  
+    		android:id="@+id/bmapView"  
+    		android:layout_width="fill_parent"  
+    		android:layout_height="fill_parent"  
+    		android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:height="48dp"
+            android:text="..."
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/msign"
+                android:height="100dp"
+                android:paddingTop="20dp"
+                android:text="@string/action_btn1"
+                android:textColor="@color/darkgreen"
+                android:width="180dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/msign"
+                android:height="100dp"
+                android:paddingTop="20dp"
+                android:text="@string/action_btn2"
+                android:textColor="@color/darkred"
+                android:width="180dp" />
+<!-- 
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/msystem"
+                android:height="100dp"
+                android:paddingTop="20dp"
+                android:text="@string/action_btn6"
+                android:width="120dp" />
+ -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

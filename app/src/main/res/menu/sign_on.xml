@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_sign"
+        android:title="@string/action_sign"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_screen"
+        android:title="@string/action_screen"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view"
+        android:title="@string/action_view"
+        android:showAsAction="never"/>
+</menu>

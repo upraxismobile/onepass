@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OnePass</string>
+    
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_sign_on">Sign On</string>
+    <string name="title_activity_sign_off">Sign Off</string>    
+    <string name="title_activity_records">Identification Records</string>
+    <string name="title_activity_employees">Users List</string>
+    <string name="title_activity_employee">User Information</string>
+    <string name="title_activity_utilities">System Tools</string>    
+    <string name="title_activity_system">System Settings</string>
+    <string name="title_activity_setserver">Server Setting</string>
+    <string name="title_activity_enroluser">Enrol User</string>
+    <string name="title_activity_capturephoto">Capture Photo</string>
+    <string name="title_activity_settings">Setting</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_admin">Logon Password</string>
+        
+    <string name="action_settings">Setting</string>    
+    <string name="action_refresh">Refresh</string>    
+    <string name="action_about">About</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_manage">Settings</string>
+    <string name="action_btn1">SIGN ON</string>
+    <string name="action_btn2">SIGN OFF</string>
+    <string name="action_btn3">Identification Records</string>
+    <string name="action_btn4">Users Information</string>
+    <string name="action_btn5">System Tools</string>
+    <string name="action_btn6">Settings</string>
+    <string name="action_btset">Bluetooth</string>
+    <string name="action_save">Save</string>
+    <string name="action_make">Make Card</string>    
+    <string name="action_back">Back</string>
+    <string name="action_capture">Capture</string>
+    <string name="action_sign">Begin</string>
+    <string name="action_screen">Clear</string>
+    <string name="action_view">Record</string>
+    <string name="action_return">Back</string>
+    <string name="action_signon">Remote</string>
+    <string name="action_signoff">Local</string>
+    <string name="action_enroll">Enrol</string>
+    <string name="action_detail">View</string>
+    <string name="action_register">Edit</string>
+    <string name="action_edit">Editor</string>
+    <string name="action_delete">Delete</string>   
+    <string name="action_clear">Empty</string>
+    <string name="action_query">Query</string>
+    <string name="action_logon">Login</string>    
+            
+    <string name="about_caption">About - OnePass System</string>
+    <string name="about_version">Vesion 1.0</string>
+    <string name="about_rights">All rights reserved,2010&#8211;2016</string>
+    
+    <string name="txt_title_01">Identification Records</string>
+    <string name="txt_info_01">View Identification Records</string>
+    <string name="txt_title_02">Users Information</string>
+    <string name="txt_info_02">Enroll,Edit,Users Information</string>
+    <string name="txt_title_03">Data Upload/Donwload</string>
+    <string name="txt_info_03">Upload and Download Data</string>
+    <string name="txt_title_04">System Settings</string>
+    <string name="txt_info_04">Setting System </string>
+    <string name="txt_title_05">About</string>
+    <string name="txt_info_05">About this System</string>
+    
+    <string name="txt_netup1">Upload Employee Records</string>
+    <string name="txt_netup2">Upload employee records to server</string>
+    <string name="txt_netup3">Upload Attendance Records</string>
+    <string name="txt_netup4">Upload Attendance Records to server</string>
+    <string name="txt_netdn1">Download Employee Records</string>
+    <string name="txt_netdn2">Download employee records from server</string>
+    
+ 	<string name="txt_set1">Edit Administrator</string>
+ 	<string name="txt_set2">Modify the login password or fingerprint</string>
+ 	<string name="txt_set3">System Settings</string>
+ 	<string name="txt_set4">Open the System Settings interface</string>
+ 	<string name="txt_set5">Network Settings</string>
+ 	<string name="txt_set6">Set the network address, etc.</string>
+ 	<string name="txt_set7">Device Type</string>
+ 	<string name="txt_set8">Set the device is compatible with the type of</string>
+    
+	<string name="txt_status"> &#8230;</string>
+    <string name="txt_adminname">Administrator</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_date">Date</string>
+    <string name="txt_datetime">Date Time</string>
+    <string name="txt_statu">Status</string>
+    <string name="txt_gender">Gemder</string>
+    <string name="txt_phone">Phone</string>
+    <string name="txt_remark">Remark</string>
+    <string name="txt_query">Query Type</string>
+    <string name="txt_count">Records:0</string>
+    <string name="txt_selall">All</string>
+    <string name="txt_selact">Administrator</string>
+    <string name="txt_selict">General</string>
+    <string name="txt_userid">ID</string>
+    <string name="txt_username">Name</string>
+    <string name="txt_usertype">Type</string>
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_identype">Identify</string>
+    <string name="txt_finer1">Fingerprint One</string>
+    <string name="txt_finer2">Fingerprint Two</string>
+    <string name="txt_finer3">Fingerprint Three</string>
+    <string name="txt_card">Card</string>
+    <string name="txt_cardmath">Card recognition is successful</string>
+    <string name="txt_card13">13.56M Card</string>
+    <string name="txt_card24">2.4G Card</string>
+    <string name="txt_bardcode1">1D Bardcode</string>
+    <string name="txt_bardcode2">2D Barcode</string>
+    <string name="txt_photo">Photo</string>
+    <string name="txt_lat">Lat.</string>
+    <string name="txt_lng">Lng.</string>
+    <string name="txt_fplogon">Login</string>
+
+    <string name="txt_fingerplace">Please press finger &#8230;</string>
+    <string name="txt_fpbegin">Begin to Identify</string>
+    <string name="txt_fpplace">Please press finger</string>
+    <string name="txt_fplift">Please lift finger</string>
+    <string name="txt_fpdisplay">Display fingerprint image &#8230;</string>
+    <string name="txt_fpprocess">Start processing &#8230;</string>
+    <string name="txt_fpidentify">Being Identify &#8230;</string>
+    <string name="txt_fpfail">Failed to generate!</string>
+    <string name="txt_fpmatchok">Match OK!</string>
+    <string name="txt_fpmatchfail">Match Fail!</string>
+    <string name="txt_fpenrolok">Enrol OK</string>
+    <string name="txt_fpenrolfail">Enrol Fail</string>
+    <string name="txt_fpduplicate">Fail,Duplicate Enroll!</string>
+    <string name="txt_cardmatch">Card Match Success</string>
+    <string name="txt_cardsn">Card SN:</string>
+    <string name="txt_fpmatching">Matching &#8230;</string>
+    <string name="txt_snerror">SN Error</string>
+    <string name="txt_fpclick">Click the fingerprint icon to begin</string>
+    <string name="txt_enrolinfo1">Not Enroll User</string>
+    <string name="txt_enrolinfo2">Please Enroll User</string>
+    <string name="txt_exitinfo">Press again to exit</string>
+        
+    <!-- Barcode Zxing -->
+    <string name="placeHolder">placeHolder</string>
+    <string name="seekbar_add">+</string>
+    <string name="seekbar_minus">-</string>
+    <string name="create">Create</string>
+    <string name="scan_failed">Scan Fails</string>
+    <string name="bottom_hint">10CM recommend keeping a distance with the camera, try to avoid backlighting and shadows</string>
+    <string name="top_hint">Barcode or two-dimensional code is placed within the frame system will automatically scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="msg_camera_framework_bug">Sorry, Camera is a problem. Please Check the Camera.</string>
+    <string name="button_ok">OK</string>
+    
+    <string name="capture_tophint">Please targets placed within the frame</string>
+    <string name="capture_bothint">Try to avoid backlighting and shadows \n Click the button to capture the frame or picture</string>
+    <string name="capture_caphint">Captue, Wait &#8230;</string>
+        
+    <!-- Bluetooth   -->
+    <string name="scanning">Scanning Devices &#8230;</string>
+    <string name="title_select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    
+    <!-- Setting   -->
+    <string name="target_ip">NET Server Address</string>
+    <string name="default_target_ip">192.168.1.106</string>
+    <string name="target_port">NET Server Port</string>
+    <string name="default_target_port">5002</string>
+    <string name="web_addr">HTTP Server Address</string>
+    <string name="default_web_addr">http://192.168.1.138/</string>
+    <string name="web_update">HTTP Update Address</string>
+    <string name="default_web_update">http://192.168.1.138/</string>
+    <string name="login_user">Login Account</string>
+    <string name="default_login_user">xpb</string>
+    <string name="login_password">Login Password</string>
+    <string name="default_login_password">1010</string>    
+    <string name="device_sn">Device Serial Number</string>
+    <string name="default_device_sn">00001</string>
+    <string name="networkcfg">Netware Setting</string>
+    <string name="not_null">Not null</string>
+    <string name="net_status">Net Status</string>
+    <string name="net_setting">System Setting</string>
+    
+    <string name="txt_upd01">Software Update</string>
+    <string name="txt_upd02">Update Now</string>
+    <string name="txt_upd03">Later</string>
+    <string name="txt_upd04">Downloading &#8230;</string>
+    <string name="txt_upd05">Cancel</string>
+    <string name="txt_upd06">Unable download file, please check SD card</string>
+    <string name="txt_upd07">Network suck ah</string>
+    <string name="txt_upd08">Not found resources</string>
+    <string name="txt_upd09">Is being detected, please wait &#8230;</string>
+    <string name="txt_upd10">You are the latest version</string>
+    <string name="txt_upd11">Can\'t get version update information</string>
+    <string name="txt_upd12">Network failure, unable to connect the server</string>
+    
+    <!-- String List   -->
+    <string name="us_prompt">Please Select</string>     
+    <string-array name="us1_array"> 
+        <item>Management</item>
+        <item>General</item>
+    </string-array>
+    <string-array name="us2_array"> 
+        <item>All</item>
+        <item>Fingerprint</item>
+        <item>Smart Card</item>
+        <item>Barcode</item>
+        <item>Fingerprint Card</item>
+    </string-array>
+    <string-array name="us3_array"> 
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="quy_array">
+        <item>All</item> 
+        <item>ID</item> 
+        <item>Name</item>
+    </string-array> 
+</resources>    
+

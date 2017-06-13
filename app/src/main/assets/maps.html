@@ -1,0 +1,146 @@
+<HTML><HEAD>
+<TITLE> Map for Android</TITLE> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<SCRIPT type="text/javascript">
+	var map;
+	var icon1;
+	var icon2;
+	var icon3;
+	var markersArray = [];
+	var circleArray = [];
+	var infoArray = [];
+
+	var infoWindow = new google.maps.InfoWindow;
+	var onMarkerClick = function()
+	{
+		var marker = this;
+		if(markersArray) 
+		{
+			for (i in markersArray) 
+			{
+				if(markersArray[i]==marker)
+				{
+					infoWindow.setContent(infoArray[i]);
+					break;
+				}
+			}
+		}
+		infoWindow.open(map, marker);
+	};
+	
+	function initialize()
+	{
+		var latitude = 0;
+		var longitude = 0;
+		if (window.android)
+		{
+			latitude = window.android.getLatitude();
+			longitude = window.android.getLongitude();
+		}
+		var myLatlng = new google.maps.LatLng(latitude,longitude);
+		var myOptions = {
+					zoom: 14,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+    	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		icon1 = "blue.png";
+		icon2 = "red.png";
+		icon3 = "site.png"; 
+	}
+
+	function centerAt(latitude, longitude)
+	{
+		myLatlng = new google.maps.LatLng(latitude,longitude);
+		map.panTo(myLatlng);
+	}
+  
+	function SetMapCenter(latitude,longitude,scale)
+	{    	
+		map.setCenter(new google.maps.LatLng(latitude,longitude),scale);
+		//map.setCenter(new google.maps.LatLng(latitude,longitude));
+	}
+  
+	function ClearMarker()
+	{
+		if (markersArray) 
+		{
+			for (i in markersArray) 
+			{
+				markersArray[i].setMap(null);
+			}
+		}
+		if (circleArray) 
+		{
+			for (j in circleArray) 
+			{
+				circleArray[j].setMap(null);
+			}
+		}
+		markersArray = [];
+		circleArray = [];
+		infoArray = [];
+	}
+
+	function ShowOverlays()
+	{
+		if (markersArray) 
+		{
+			for (i in markersArray) 
+			{
+				markersArray[i].setMap(map);
+			}
+		}
+		if (circleArray) 
+		{
+			for (j in circleArray) 
+			{
+				circleArray[j].setMap(map);
+			}
+		}
+	}
+        
+	function CreateMarker(latitude, longitude,name,txt)
+	{
+		ClearMarker();
+		
+		marker = new google.maps.Marker({position: new google.maps.LatLng(latitude,longitude),
+                                     map: map,
+                                     icon: icon3,
+                                     title: name
+                                     }); 
+		google.maps.event.addListener(marker, 'click', onMarkerClick);
+		markersArray.push(marker);
+		infoArray.push(txt);
+	
+		//DrawObjectCircle(latitude, longitude);
+		//ShowOverlays();
+	}
+   
+	function DrawCircle(lat, lng, radius, strokeColor, strokeWidth, strokeOpacity, fillColor, fillOpacity)
+	{
+		var center=new google.maps.LatLng(lat,lng);
+		var populationOptions={
+                strokeColor: strokeColor,
+                strokeOpacity: strokeOpacity,
+                strokeWeight: strokeWidth,
+                fillColor:fillColor,
+                fillOpacity: fillOpacity,
+                map: map,
+                center: center,
+                radius: radius
+		};
+		cityCircle = new google.maps.Circle(populationOptions);
+	}
+        
+	function DrawObjectCircle(lat,lng)
+	{
+		DrawCircle(lat, lng,100, "#800000", 1, 0.25, "#FF00FF",0.25);
+	}
+        
+</SCRIPT>
+
+<BODY style="margin: 0px; padding: 0px;" onload="initialize()">
+<DIV id="map_canvas" style="width: 100%; height: 100%;"></DIV>
+</BODY>
+</HTML>
